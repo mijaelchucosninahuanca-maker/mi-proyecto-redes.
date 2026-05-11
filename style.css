@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: rgba(0, 35, 80, 0.95);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00ccff;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 35, 80, 0.8), rgba(99, 103, 107, 0.8)), 
+                url('images/infrastructure-data-center.jpeg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 70px;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3.8rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background: #00aaff;
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0088cc;
+    transform: scale(1.05);
+}
+
+/* SECCIONES */
+.section {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #003366;
+    margin-bottom: 3rem;
+}
+
+/* SERVICIOS */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background: white;
+    padding: 2.5rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.4s;
+}
+
+.service-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* GALERÍA */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.video-container {
+    max-width: 900px;
+    margin: 30px auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* FORMULARIO */
+.contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 16px;
+    font-size: 1.1rem;
+}
+
+/* FOOTER */
+footer {
+    background: #002244;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 1rem;
+        font-size: 0.95rem;
+    }
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+}
+
